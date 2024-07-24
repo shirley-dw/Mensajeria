@@ -25,12 +25,13 @@ const InfoScreen = () => {
         {contacto && (
           <>
             <div className="info-header">
-              <img className="profile-pic" src={'/Imagenes/' + contacto.thumbnail} alt="Foto perfil" />
-              <h1>{contacto.nombre}</h1>
-              <p>Última conexión: {contacto.ultima_conexion}</p>
+              <img className="profile" src={'/imagenes/' + contacto.thumbnail} alt="Foto perfil" />
+              <div className='info'>
+              <h1 className="profile-name">{contacto.nombre}</h1>
+              <p className='status-text'>Última conexión: {contacto.ultima_conexion}</p>
             </div>
-
-            <div>  <div className="opciones">
+            </div>
+            <div>  <div className="options">
               <div className="icon-container"><MdOutlinePhone className="icons" /><p>Llamar</p></div>
               <div className="icon-container"><MdOutlineVideocam className="icons" /><p>Video</p></div>
               <div className="icon-container"><MdSearch className="icons" /><p>Buscar</p></div>

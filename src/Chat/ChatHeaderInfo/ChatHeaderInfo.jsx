@@ -40,7 +40,7 @@ const ChatHeaderInfo = () => {
           
           {
             contacto && <>
-              <img className="fotoperfil" src={'/Imagenes/' + contacto.thumbnail} alt="Foto perfil" />
+              <img className="profile" src={'/imagenes/' + contacto.thumbnail} alt="Foto perfil" />
               <div className="chat-header">
                 <div className="profile-name">{contacto.nombre}</div>
                 <div className="status-text">{contacto.ultima_conexion}</div>

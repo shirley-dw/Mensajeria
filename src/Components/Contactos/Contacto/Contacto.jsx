@@ -9,7 +9,7 @@ import "./Contacto.css";
 export const Contacto = ({ id, nombre, thumbnail, mensajes }) => {
 /* Desestructuro la props contacto */
 
-  const imagenes = '/Imagenes/' + thumbnail 
+  const imagenes = '/imagenes/' + thumbnail 
 
   const ultimoMensaje= mensajes[mensajes.length - 1] /* Ultimo mensaje en el array mensajeID */
   const horaUltimoMensaje = ultimoMensaje?.hour/* Hora del ultimo mensaje */

@@ -4,18 +4,21 @@ import "./ListaContactos.css"
 import { ObtenerContactos }from '../../../Fetching/contactosFetching.js'
 
 
-
  const ListaContactos = ({ search }) => {
   const [contactos, setContactos] = useState([]);
   const [contactosFiltrados, setContactosFiltrados] = useState([]);
+ 
 
   useEffect(() => {
     ObtenerContactos()
-     .then((contactos) => {
-      console.log("contactos", contactos)
+      .then((contactos) => {
+        contactos.forEach((contacto) => {
+          const ultimoMensaje = contacto.mensajes[contacto.mensajes.length - 1];
+          contacto.ultimoMensaje = ultimoMensaje;
+        });
         setContactos(contactos);
       })
-     .catch((error) => {
+      .catch((error) => {
         console.error("Error al obtener contactos:", error);
       });
   }, []);

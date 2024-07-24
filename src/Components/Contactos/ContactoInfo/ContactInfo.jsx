@@ -28,7 +28,7 @@ const ContactInfo = () => {
             });
     }, [contactoID]);
 
-    const imagenes = '/Imagenes/' + contacto.thumbnail;
+    const imagenes = '/imagenes/' + contacto.thumbnail;
     return (
         <div className="infoContainer">
             <div className="infoHeader">

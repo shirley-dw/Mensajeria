@@ -10,6 +10,8 @@ const useContactos = (id) => {
     /* estados */
     const [contacto, setContacto] = useState(null);
     const [loading, setLoading] = useState(true);
+   
+
 
     /* Consulta */
     useEffect(() => {
@@ -28,7 +30,8 @@ const useContactos = (id) => {
     }, [id]);
 
     /* Se retorna los estados */
-    return { contacto, loading };
+    return { contacto, loading};
 };
+
 
 export default useContactos;
