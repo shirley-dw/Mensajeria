@@ -1,0 +1,203 @@
+[
+    {
+        "nombre": "Homero",
+        "thumbnail": "homer.jpg",
+        "ultima_conexion": "ayer",
+        "id": 1,
+        "mensajes": [
+            {
+                "author": "Homero",
+                "text": "Deberiamos besarnos para romper la tension",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "11:40",
+                "id": "1"
+            },
+            {
+                "author": "yo",
+                "text": "Homero debes pensar en Marge",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "11:43",
+                "id": "2"
+            },
+            {
+                "author": "Homero",
+                "text": "Y tu deberias pensar en la tension",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "11:45",
+                "id": "3"
+            },
+            {
+                "author": "yo",
+                "text": "Besemonos para romper la tension",
+                "status": "entregado",
+                "day": "hoy",
+                "hour": "13:10",
+                "id": "4"
+            }
+        ]
+    },
+    {
+        "nombre": "Marge",
+        "thumbnail": "marge.jpg",
+        "ultima_conexion": "ayer",
+        "id": 2,
+        "mensajes": [
+            {
+                "author": "Marge",
+                "text": "No podras escapar jovencito, me paso 23hours al day en esta casa",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "14:00",
+                "id": "1"
+            },
+            {
+                "author": "yo",
+                "text": "Okey lavare los platos",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "14:05",
+                "id": "2"
+            },
+            {
+                "author": "Marge",
+                "text": "No bastara, no veras a MilHouse",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "14:10",
+                "id": "3"
+            },
+            {
+                "author": "yo",
+                "text": "Quizas si, quizas no",
+                "status": "entregado",
+                "day": "hoy",
+                "hour": "14:15",
+                "id": "4"
+            }
+        ]
+    },
+    {
+        "nombre": "Flanders",
+        "thumbnail": "flanders.jpg",
+        "ultima_conexion": "hoy",
+        "id": 3,
+        "mensajes": [
+            {
+                "author": "Flanders",
+                "text": "NOOOO! Han descubierto mi secretillo",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "15:10",
+                "id": "1"
+            },
+            {
+                "author": "yo",
+                "text": "Descuida Flanders tu secreto estara a salvo conmigo",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "15:05",
+                "id": "2"
+            },
+            {
+                "author": "Flanders",
+                "text": "No lo se parece falso",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "15:10",
+                "id": "3"
+            },
+            {
+                "author": "No confias en mi?",
+                "status": "entregado",
+                "day": "hoy",
+                "hour": "15:15",
+                "id": "4"
+            }
+        ]
+    },
+    {
+        "nombre": "Bart",
+        "thumbnail": "bart.jpg",
+        "ultima_conexion": "hoy",
+        "id": 4,
+        "mensajes": [
+            {
+                "author": "Bart",
+                "text": "Yo no fui, nadie me vio, no pueden probarlo",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "17:00",
+                "id": "1"
+            },
+            {
+                "author": "yo",
+                "text": "Y que dices de MilHouse?",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "17:05",
+                "id": "2"
+            },
+            {
+                "author": "Bart",
+                "text": "Maldito Milhouse",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "17:10",
+                "id": "3"
+            },
+            {
+                "author": "yo",
+                "text": "Debes hablar con el",
+                "status": "entregado",
+                "day": "hoy",
+                "hour": "17:15",
+                "id": "4"
+            }
+        ]
+    },
+    {
+        "nombre": "Lisa",
+        "thumbnail": "lisa.jpg",
+        "ultima_conexion": "Hace 2 days",
+        "id": 5,
+        "mensajes": [
+            {
+                "author": "Lisa",
+                "text": "Debo estudiar para el examen de matematicas y tocar mi saxofon",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "19:00",
+                "id": "1"
+            },
+            {
+                "author": "yo",
+                "text": "Pues lisa diviertete un poco",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "19:05",
+                "id": "2"
+            },
+            {
+                "author": "Lisa",
+                "text": "Nunca.",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "19:10",
+                "id": "3"
+            },
+            {
+                "author": "yo",
+                "text": "Seras la novia de Milhouse",
+                "status": "visto",
+                "day": "hoy",
+                "hour": "19:15",
+                "id": "4"
+            }
+        ]
+    }
+   
+]
+

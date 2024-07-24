@@ -1,0 +1,31 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: star;
+    overflow-y: scroll;
+    background: rgb(30, 29, 55);
+    background: linear-gradient(90deg, rgba(30, 29, 55, 1) 0%, rgba(31, 74, 37, 1) 52%, rgba(8, 67, 79, 1) 100%);
+}
+
+.ChatScreen {
+    border-radius: 30px;
+    position: relative;
+
+}
+
+.chat::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+.chat::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.chat::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.chat::-webkit-scrollbar-thumb:hover {
+    background: #111B21;
+}

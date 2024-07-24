@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Variables de Navegador Chat */
+:root{
+    --ColorNav: #035C55;
+    --PrimaryFont: font-family:"Lato", sans-serif ;
+}
+
+*{
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.chat-header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--ColorNav);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.chat-header img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.chat-header .contact-info .contact-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chat-header .contact-info .contact-status {
+    font-size: 12px;
+    color: #e5ddd5;
+}
+
+ .icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.icons svg {
+    cursor: pointer;
+    font-size: 30px;
+    color: #e5ddd5; 
+    transition: all 0.3s ease;
+   
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-right: 10px; 
+    font-size: 20px;
+    color: #e5ddd5;
+    font-weight: 900;
+}
+
+.profile{
+    height: 30px;
+}
