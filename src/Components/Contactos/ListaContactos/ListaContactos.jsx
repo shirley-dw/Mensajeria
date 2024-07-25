@@ -22,21 +22,6 @@ import { ObtenerContactos }from '../../../Fetching/contactosFetching.js'
         console.error("Error al obtener contactos:", error);
       });
   }, []);
-  useEffect(() => {
-    const fetchContactos = async () => {
-      try {
-        const contactos = await ObtenerContactos();
-        contactos.forEach((contacto) => {
-          const ultimoMensaje = contacto.mensajes[contacto.mensajes.length - 1];
-          contacto.ultimoMensaje = ultimoMensaje;
-        });
-        setContactos(contactos);J
-      } catch (error) {
-        console.error("Error al obtener contactos:", error);
-      }
-    };
-    fetchContactos();
-  }, []);
 
   useEffect(() => {
     if (search) {
