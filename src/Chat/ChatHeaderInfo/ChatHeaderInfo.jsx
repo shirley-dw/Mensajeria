@@ -21,10 +21,6 @@ const ChatHeaderInfo = () => {
   /* Estados del hook */
   const { contacto, loading } = useContactos(id);
 
-  /* const handleProfileClick = () => {
-    navigate(/contactInfo/${contacto.id});
-  }; */
-
   /* invocación del hook pasando como parámetro el id obtenido por useParams() */
   useContactos(id);
 
@@ -40,7 +36,7 @@ const ChatHeaderInfo = () => {
           
           {
             contacto && <>
-              <img className="profile" src={'/imagenes/' + contacto.thumbnail} alt="Foto perfil" />
+              <img className="profile-pic" src={'/imagenes/' + contacto.thumbnail} alt="Foto perfil" />
               <div className="chat-header">
                 <div className="profile-name">{contacto.nombre}</div>
                 <div className="status-text">{contacto.ultima_conexion}</div>
@@ -51,7 +47,7 @@ const ChatHeaderInfo = () => {
         <div className="icons">
           <GoDeviceCameraVideo />
           <MdPhone />
-          <Link to={`/contactInfo/${id}`} /* onClick={handleProfileClick} */>
+          <Link to={`/contactInfo/${id}`}>
             <IoInformationCircleOutline className="info" />
           </Link>
         </div>
