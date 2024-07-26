@@ -12,7 +12,7 @@ const Mensajes = ({ mensaje, contacto }) => {
     <>
       <div className="content"  style={{ justifyContent: isAuthor ? 'flex-end' : 'flex-start' }}>
         <div className="mensaje" style={{ backgroundColor: isAuthor ? '#D9FDD3' : '#FFFFFF' }}>
-          <p className="text">{text}</p>
+          <p className="texto">{text}</p>
           <div className="content-lower">
             <span className="timeSince">{`${day} ${hour}`}</span>
             <span className="timeSince">{status}</span>

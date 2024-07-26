@@ -1,22 +1,37 @@
-import React, { useState } from 'react'/* Importo react + useState */
-import { CiCamera } from 'react-icons/ci'
-import { BsThreeDotsVertical } from 'react-icons/bs'
-import { IoMdSearch } from 'react-icons/io'
-import './ContactoHeader.css';
+// Importo librerías
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+import { BsThreeDotsVertical } from 'react-icons/bs';
+import { CiCamera } from 'react-icons/ci';
+import { IoMdSearch } from 'react-icons/io';
 import { SiWhatsapp } from "react-icons/si";
-import FormBusquedaDeContactos from '../FormBusquedaDeContactos/ContactoForm.jsx'; /* Importo form de busqueda */
+import { BsArrowRightCircleFill } from "react-icons/bs";
 
+// Estilos
+import './ContactoHeader.css';
+/* Importo form de busqueda */
+import FormBusquedaDeContactos from '../FormBusquedaDeContactos/ContactoForm.jsx';
 
-/*  Function contactoHeader con props "Search y onSearchChange" */
 const ContactoHeader = ({ search, onSearchChange }) => {
   const [searchVisible, setSearchVisible] = useState(false);/* Inicio estado en false */
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  /* Function handleSearchClick */
+    const openModal = () => {
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+    };
   const handleSearchClick = () => {
-    setSearchVisible(!searchVisible) /* La instacion y digo que cuando sea diferente se ejecute */
-  }
+    if (searchVisible) {
+      setSearchVisible(false);
+    } else {
+      setSearchVisible(true);
+    }
+  };
 
-  return ( 
+  return (
     <div className={`contact-header ${searchVisible ? 'search-visible' : ''}`}>{/*  Si el estado es true, se ejecuta la clase search-visible */}
       {searchVisible && (
         /* Paso las props a FormBusquedaDeContactos */
@@ -28,13 +43,43 @@ const ContactoHeader = ({ search, onSearchChange }) => {
       <SiWhatsapp className='logo-icons' />
       <div className='logo'>WhatsApp</div>
       <div className='icons'>
-
         <CiCamera />
-        <IoMdSearch onClick={handleSearchClick} />  
-        <BsThreeDotsVertical />
+        <IoMdSearch onClick={handleSearchClick} />
+        
+        <BsThreeDotsVertical className='icons' onClick={openModal} />
+            </div>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Search"
+          className="modal"
+          overlayClassName="overlay"
+        
+        >
+          <div className="modal-header">
+            <h2 className='title'>Menu</h2>
+            <button onClick={closeModal} className="close-button">X</button>
+          </div>
+          <div className='modal-body'></div>
+          <p className='subtitle'><BsArrowRightCircleFill  className='icons-arrow'/>Administracion de anuncios</p>
+          <p className='subtitle'><BsArrowRightCircleFill  className='icons-arrow'/>Nuevo grupo</p>
+          <p className='subtitle'> <BsArrowRightCircleFill  className='icons-arrow'/>Comunidades</p>
+          <p className='subtitle'> <BsArrowRightCircleFill  className='icons-arrow'/>Etiquetas</p>
+          <p className='subtitle'> <BsArrowRightCircleFill  className='icons-arrow'/>Dispositivos vinculados </p>
+          <p className='subtitle'><BsArrowRightCircleFill  className='icons-arrow'/>Mensajes destacados</p>
+          <p className='subtitle'> <BsArrowRightCircleFill  className='icons-arrow'/>Ajustes</p>
+        </Modal>
       </div>
-    </div>
+ 
   )
 }
 
+
 export default ContactoHeader
+{/*   <p className='subtitle'>Administracion de anuncios</p>
+                  <p className='subtitle'>Nuevo grupo</p>
+                  <p className='subtitle'>Comunidades</p>
+                  <p className='subtitle'>Etiquetas</p>
+                  <p className='subtitle'>Dispositivos vinculados </p>
+                  <p className='subtitle'>Mensajes destacados</p>
+                  <p className='subtitle'>Ajustes</p> */}

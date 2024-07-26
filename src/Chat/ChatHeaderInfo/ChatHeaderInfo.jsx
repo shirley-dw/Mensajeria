@@ -48,7 +48,7 @@ const ChatHeaderInfo = () => {
           <GoDeviceCameraVideo />
           <MdPhone />
           <Link to={`/contactInfo/${id}`}>
-            <IoInformationCircleOutline className="info" />
+            <IoInformationCircleOutline className="icono-info" />
           </Link>
         </div>
       </div>

@@ -102,7 +102,7 @@
             },
             {
                 "author": "yo",
-                "text": "Es tu momento de escapar",
+                "text": "Es tu momento Marge, haz lo tuyo",
                 "status": "entregado",
                 "day": "hoy",
                 "hour": "14:20",
@@ -279,30 +279,30 @@
         ]
     },
     {
-                "nombre": "Moe Szyslak",
-                "thumbnail": "moe.jpg",
-                "ultima_conexion": "Hace 3 days",
-                "id": "6",
+                "nombre": "Krusty el payaso",
+                "thumbnail": "krusty.jpg",
+                "ultima_conexion": "Ayer",
+                "id": 6,
                 "mensajes": [
                     {
-                        "author": "Moe Szyslak",
-                        "text": "Ahora en serio...¡Págame!",
+                        "author": "Krusty el payaso",
+                        "text": "Y esos turistas fueron decapitados antes de entrar a la Casa de los Cuchillos de Krustylandia",
                         "status": "visto",
-                        "day": "hoy",
-                        "hour": "20:00",
+                        "day": "ayer",
+                        "hour": "17:45",
                         "id": "1"
                     },
                     {
                         "author": "yo",
-                        "text": "Moe, sírveme algo fuerte como para olvidar que las odio, pero no tanto como para creer que las quiero",
+                        "text": "Haz perdido un televidente de Krustylandia",
                         "status": "visto",
-                        "day": "hoy",
+                        "day": "ayer",
                         "hour": "20:05",
                         "id": "2"
                     },
                     {
-                        "author": "Moe Szyslak",
-                        "text": "No hasta que pagues lo que me debes",
+                        "author": "Krusty el payaso",
+                        "text": "...y creo que dije en voz alta lo que debí decir en voz baja",
                         "status": "visto",
                         "day": "hoy",
                         "hour": "20:10",
@@ -310,29 +310,85 @@
                     },
                     {
                         "author": "yo",
-                        "text": "Me escapare",
-                        "status": "visto",
+                        "text": "Ya, ya esta bien.",
+                        "status": "ayer",
                         "day": "hoy",
                         "hour": "20:15",
                         "id": "4"
                     },
                     {
-                        "author": "Moe Szyslak",
-                        "text": "Nadie se le escapa a Moe. No ha nacido quién",
+                        "author": "Krusty el payaso",
+                        "text": "No es mi culpa, es el Percodan... ¡Para mi que esa porqueria causa adicción!, ¡Bien es hora de un corte de nuestro patrocinador que....! ¡AY, ES PERCODAN, MALDITA SEA!",
                         "status": "visto",
-                        "day": "hoy",
+                        "day": "ayer",
                         "hour": "20:20",
                         "id": "5"
                     },
                     {
                         "author": "yo",
-                        "text": "Ouch, aqui esta tu dinero",
+                        "text": "PERCODAAAAAAAAAN",
                         "status": "visto",
-                        "day": "hoy",
+                        "day": "ayer",
                         "hour": "20:25",
                         "id": "6"
                     }
                 ]
-            }
+            },
+            {
+                        "nombre": "Moe Szyslak",
+                        "thumbnail": "moe.jpg",
+                        "ultima_conexion": "Hace 3 days",
+                        "id": 7,
+                        "mensajes": [
+                            {
+                                "author": "Moe Szyslak",
+                                "text": "Ahora en serio...¡Págame!",
+                                "status": "visto",
+                                "day": "hoy",
+                                "hour": "20:00",
+                                "id": "1"
+                            },
+                            {
+                                "author": "yo",
+                                "text": "Moe, sírveme algo fuerte como para olvidar que las odio, pero no tanto como para creer que las quiero",
+                                "status": "visto",
+                                "day": "hoy",
+                                "hour": "20:05",
+                                "id": "2"
+                            },
+                            {
+                                "author": "Moe Szyslak",
+                                "text": "No hasta que pagues lo que me debes",
+                                "status": "visto",
+                                "day": "hoy",
+                                "hour": "20:10",
+                                "id": "3"
+                            },
+                            {
+                                "author": "yo",
+                                "text": "Me escapare",
+                                "status": "visto",
+                                "day": "hoy",
+                                "hour": "20:15",
+                                "id": "4"
+                            },
+                            {
+                                "author": "Moe Szyslak",
+                                "text": "Nadie se le escapa a Moe. No ha nacido quién",
+                                "status": "visto",
+                                "day": "hoy",
+                                "hour": "20:20",
+                                "id": "5"
+                            },
+                            {
+                                "author": "yo",
+                                "text": "Ouch, aqui esta tu dinero",
+                                "status": "visto",
+                                "day": "hoy",
+                                "hour": "20:25",
+                                "id": "6"
+                            }
+                        ]
+                    }
         ]
     
