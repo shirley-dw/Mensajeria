@@ -166,7 +166,7 @@ font-size: 30px;
     background: #111B21;
 }
 
-@media  (max-width: 768px) {
+@media  (max-width: 320px) {
     .info-screen{
         width: 100%;
     }

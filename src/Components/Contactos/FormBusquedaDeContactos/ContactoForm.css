@@ -5,7 +5,6 @@
   z-index: 999; 
   justify-content: space-around;
   background-color: #035C55;
-
 }
   
   .form-search input {
@@ -22,7 +21,6 @@
     cursor: pointer;
     width: 30px;
     height: 30px;
-    background-color: transparent;
     color: #111B21;
     display: flex;
     align-items: center;
@@ -30,9 +28,4 @@
     transition: all 0.3s ease;
     
   }
-  
-  .back:hover {
-    background-color: #111B21;
-    color: white;
-    border: 0px solid #111B21;
-  }
+

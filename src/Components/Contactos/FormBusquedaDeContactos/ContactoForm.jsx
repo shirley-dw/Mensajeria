@@ -1,14 +1,14 @@
 // Importo librerias
-import React  from 'react';
+import React from 'react';
 import { MdArrowForwardIos } from "react-icons/md";
 // Importo estilos
 import './ContactoForm.css';
 
-function FormBusquedaDeContactos({ search, onSearchChange, onBackButtonClick }) { 
+function FormBusquedaDeContactos({ search, onSearchChange, onBackButtonClick }) {
   // Funcion que cambia el estado
-  const handleChange = (event) => { 
+  const handleChange = (event) => {
     if (typeof onSearchChange === 'function') {
-      onSearchChange(event.target.value) 
+      onSearchChange(event.target.value)
       event.preventDefault()
     } else {
       console.error('onSearchChange no es una función');
@@ -18,17 +18,17 @@ function FormBusquedaDeContactos({ search, onSearchChange, onBackButtonClick }) 
       onBackButtonClick();
     }
   }
-// Render
+  // Render
   return (
 
     <form className="form-search">
-      <input 
+      <input
         type="text"
         placeholder="Buscar..."
         onChange={handleChange}
         value={search}
       />
-     <button><MdArrowForwardIos className='back'onClick={onBackButtonClick} /></button> 
+      <button><MdArrowForwardIos className='back' onClick={onBackButtonClick} /></button>
     </form>
   );
 }
