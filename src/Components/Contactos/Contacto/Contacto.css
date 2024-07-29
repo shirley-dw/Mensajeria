@@ -20,8 +20,6 @@
 .contact-item .dato {
     flex: 1;
     overflow: hidden;
-
-
 }
 
 .contact-item .name {
@@ -48,4 +46,27 @@
     width: 70px;
     border-radius: 50px;
     margin-left: 10px;
+}
+
+@media (max-width: 320px) {
+    .contact-item  {
+        height: 70px;
+
+      
+    }
+    .contact-item .ultimo-mensaje {
+        font-size: 13px;
+        
+    }
+    .contact-item .name {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    .contact-item .time {
+        font-size: 10px;
+    }
+    .img {
+        width: 40px;
+    }
+    
 }

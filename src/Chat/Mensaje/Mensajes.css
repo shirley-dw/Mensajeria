@@ -21,3 +21,20 @@
     font-size: 0.8em;
     color: #999;
   }
+
+  @media (max-width: 320px) {
+    .content-lower {
+      font-size:10px;
+    }
+   .content {
+      margin: 5px 0;
+    }
+    .mensaje {
+      padding: 5px;
+      width: 60%;
+      
+    }
+    .texto {
+      font-size: 13px;
+    }
+  }

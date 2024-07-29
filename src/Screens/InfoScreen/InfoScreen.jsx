@@ -96,7 +96,7 @@ const InfoScreen = () => {
 
     );
   }
-  return <div>No se encontró el contacto.</div>;
+ return console.log('error');
 }
 
 export default InfoScreen;

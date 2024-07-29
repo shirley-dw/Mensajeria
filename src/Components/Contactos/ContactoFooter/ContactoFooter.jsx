@@ -27,9 +27,9 @@ const ContactoFooter = () => {
     // Render
     return (
         <div className="contact-footer">
-            <div className="access"><BsFillChatLeftTextFill className='icons' />Chats</div>
+            <div className="access"><BsFillChatLeftTextFill className='icons' /><p>Chats</p></div>
             <div className="access" onClick={openModal}>
-                <BsTelephone className='icons' />Llamadas
+                <BsTelephone className='icons' /><p>Llamadas</p>
             </div>
             <Modal
                 isOpen={modalIsOpen}
@@ -52,8 +52,8 @@ const ContactoFooter = () => {
                     <p className='text'>Ayer, 20:00</p>
                 </div>
             </Modal>
-            <div className="access"><RiChatSmile3Line className='icons' />Novedades</div>
-            <div className="access"><LiaToolsSolid className='icons' />Herramientas</div>
+            <div className="access"><RiChatSmile3Line className='icons' /><p>Anuncios</p></div>
+            <div className="access"><LiaToolsSolid className='icons' /><p>Tools</p></div>
         </div>
     );
 };

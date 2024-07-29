@@ -3,6 +3,7 @@
     flex-direction: column;
     overflow: scroll;
     height: 100vh;
+   margin-top: 70px;
   }
   
   ::-webkit-scrollbar {

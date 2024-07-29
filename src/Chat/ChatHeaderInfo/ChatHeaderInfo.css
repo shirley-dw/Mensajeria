@@ -81,6 +81,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
+}
+@media (max-width: 320px) {
+    .chat-header-info {
+        height: 70px;
+        font-size: 8px;
+    }
+   .contact .profile-name {
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 10px;
+   }
+   .contact .status-text {
+    font-size: 13px;
+    margin-left: 10px;
+   }
+   .profile-pic{
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+    border: 2px solid #7ecf52;
+   }
+   .icons svg {
+    font-size: 20px;
+   }
 
 }

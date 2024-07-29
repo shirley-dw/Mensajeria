@@ -8,6 +8,7 @@
     justify-content: space-between; 
     height: 70px;
     transition: all 0.3s ease;
+    position: fixed;
 }
 
 .contact-header .icons {
@@ -118,7 +119,7 @@
         display: flex;
         align-items: center;
         font-size: 8px;
-        position: fixed;
+        
     }
        .contact-header .icons {
         font-size: 10px;
