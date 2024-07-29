@@ -1,5 +1,5 @@
 //Importo libreria
-import React, { useState } from "react";
+import React, { useState} from "react";
 // Importo componenetes
 import { ChatHeaderInfo, ListaMensajes, MensajeForm, InfoScreen } from '../index.js' /* Importa tres componentes desde el archivo */
 // Importo estilos
@@ -7,8 +7,8 @@ import './ChatScreen.css' /* Importa el arhivo ChatScreen.css */
 
 const ChatScreen = ({ contactoID }) => {
     //Defino estado inicial de los mensajes
-    const [mensajes, setMensajes] = useState([]);
-    // Funcion addMensajes para agregar un nuevo mensaje
+    const [mensajes, setMensajes] = useState([]); 
+// Funcion addMensajes para agregar un nuevo mensaje
     const addMensaje = (mensajeNuevo) => {
         const msjNuevo = {
             author: 'yo',
@@ -25,11 +25,11 @@ const ChatScreen = ({ contactoID }) => {
         <>
             <ChatHeaderInfo />
             <div>
-                <div className='chat'>
+                <div className='chat'> 
                     <div className='ChatScreen'>
-                        <ListaMensajes contactoID={contactoID} mensaje={mensajes[mensajes.length - 1]} />
+                        <ListaMensajes contactoID={contactoID} mensaje={mensajes[mensajes.length - 1]}  />
                     </div>
-                    <MensajeForm submitMensaje={addMensaje} />
+                    <MensajeForm submitMensaje={addMensaje} /> 
                     <InfoScreen contactoID={contactoID} />
                 </div>
             </div>
