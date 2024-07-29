@@ -168,9 +168,9 @@ font-size: 30px;
 
 @media  (max-width: 768px) {
     .info-screen{
-        width: 90%;
+        width: 100%;
     }
     .info-container {
-        width: 100%;
+        width: 90%;
     }
 }
