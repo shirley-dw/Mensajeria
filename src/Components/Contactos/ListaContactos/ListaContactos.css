@@ -1,9 +1,9 @@
 .contact-list{
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: scroll-y;
     height: 100vh;
-   margin-top: 70px;
+    margin-top: 70px;
   }
   
   ::-webkit-scrollbar {
