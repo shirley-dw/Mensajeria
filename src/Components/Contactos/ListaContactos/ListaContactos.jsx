@@ -1,14 +1,18 @@
+// Importo librerías
 import React, { useState, useEffect } from "react";
-import  Contacto  from "../../Contactos/Contacto/Contacto.jsx";
-import "./ListaContactos.css"
-import { ObtenerContactos }from '../../../Fetching/contactosFetching.js'
+// Importo componentes
+import Contacto from "../../Contactos/Contacto/Contacto.jsx";
+// Fetching
+import { ObtenerContactos } from '../../../Fetching/contactosFetching.js';
+// Estilos
+import "./ListaContactos.css";
 
 
- const ListaContactos = ({ search }) => {
+const ListaContactos = ({ search }) => {
   const [contactos, setContactos] = useState([]);
   const [contactosFiltrados, setContactosFiltrados] = useState([]);
- 
 
+  // Fetching
   useEffect(() => {
     ObtenerContactos()
       .then((contactos) => {
@@ -35,18 +39,19 @@ import { ObtenerContactos }from '../../../Fetching/contactosFetching.js'
     }
   }, [contactos, search]);
 
+  // Render
   return (
     <div className="contact-list">
-      {contactosFiltrados.map(({id, nombre, thumbnail, mensajes }) => (
+      {contactosFiltrados.map(({ id, nombre, thumbnail, mensajes }) => (
         <Contacto
-          id = {id}
+          id={id}
           key={id}
           nombre={nombre}
           thumbnail={thumbnail}
           mensajes={mensajes}
         />
       ))}
-  
+
     </div>
   );
 }

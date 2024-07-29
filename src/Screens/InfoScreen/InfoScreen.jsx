@@ -44,6 +44,7 @@ const InfoScreen = () => {
       <div className="info-screen">
         {contacto && (
           <>
+            <div className="info-container">
             <div className="info-header">
             <div><IoChevronBackSharp className='back-icon'onClick={goBack} /></div>
             <BsThreeDotsVertical className='back-icon' onClick={openModal} />
@@ -73,12 +74,12 @@ const InfoScreen = () => {
               <p className='status-text'>Última conexión: {contacto.ultima_conexion}</p>
             </div>
             <div>  <div className="options">
-              <div className="icon-container"><MdOutlinePhone className="iconos" /><p>Llamar</p></div>
-              <div className="icon-container"><MdOutlineVideocam className="iconos" /><p>Video</p></div>
-              <div className="icon-container"><MdSearch className="iconos" /><p>Buscar</p></div>
+              <div className="icon-container"><MdOutlinePhone className="opciones-icons" /></div>
+              <div className="icon-container"><MdOutlineVideocam className="opciones-icons" /></div>
+              <div className="icon-container"><MdSearch className="opciones-icons" /></div>
             </div>
             
-              <div className="decorado">
+              <div className="deco">
                 <div className="avanced"><FaRegBell className="iconos" /><p>Notificaciones</p></div>
                 <div className="avanced"><AiOutlinePicture className="iconos" /><p>Visibilidad de archivos multimedia<span className="sub">Desactivada</span></p></div>
                 <div className="avanced"><FaRegBookmark className="iconos" /><p>Mensajes conservados</p></div>
@@ -87,6 +88,7 @@ const InfoScreen = () => {
                 <div className="avanced"><PiLockLaminatedFill className="iconos" /><p>Restringir chat<span>Restringe y oculta este chat en este dispositivo</span></p> </div>
               </div>
             </div>
+        </div>
           </>
         )}
 

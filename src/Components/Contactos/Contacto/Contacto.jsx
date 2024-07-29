@@ -1,9 +1,8 @@
-/* importo react/ Link /CSS/ Imagenes */
+// Importo librerias
 import React from "react";
 import { Link } from "react-router-dom";
+// Importo estilos
 import "./Contacto.css";
-
-
 
 /* Componente Contacto le paso props a contacto */
 const Contacto = ({ id, nombre, thumbnail, mensajes }) => {
@@ -12,7 +11,7 @@ const Contacto = ({ id, nombre, thumbnail, mensajes }) => {
   const ultimoMensaje = mensajes.length > 0 ? mensajes[mensajes.length - 1] : null;
   const textoUltimoMensaje = ultimoMensaje?.text ?? 'Sin mensajes';
   const horaUltimoMensaje = ultimoMensaje?.hour;
-
+// Render
   return (
     <Link className="contact-link" to={`/mensaje/${id}`}>
       <div key={id} className="contact-item">

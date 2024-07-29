@@ -6,23 +6,25 @@ import { RiChatSmile3Line } from "react-icons/ri";
 import { LiaToolsSolid } from "react-icons/lia";
 import { IoCallOutline } from "react-icons/io5";
 import { MdCallReceived } from "react-icons/md";
+
+
 // Estilos
 import './ContactoFooter.css';
 
 const ContactoFooter = () => {
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-
+    const [modalIsOpen, setModalIsOpen] = useState(false); // Estado inicial en false
+    // Función que abre el modal    
     const openModal = () => {
         setModalIsOpen(true);
     };
-
+    // Función que cierra el modal
     const closeModal = () => {
         setModalIsOpen(false);
     };
 
     // Establece el elemento de la aplicación para el modal (para accesibilidad)
     Modal.setAppElement('#root');
-
+    // Render
     return (
         <div className="contact-footer">
             <div className="access"><BsFillChatLeftTextFill className='icons' />Chats</div>

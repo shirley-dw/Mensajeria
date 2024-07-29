@@ -1,28 +1,36 @@
+// Importo librerias
 import React, { useState } from 'react';
+// Importo estilos
 import './ContactScreen.css'
-/* import { ContactoFooter, ContactoHeader, ListaContactos } from '../../components/Contactos/Contactos.jsx'; */
-/* import { ContactoHeader } from '../../Components/Contactos/ContactoHeader/ContactoHeader.jsx'*/
-import  ListaContactos  from '../../Components/Contactos/ListaContactos/ListaContactos.jsx'
-import  ContactoFooter from '../../Components/Contactos/ContactoFooter/ContactoFooter.jsx'
+// Importo componentes
+import ListaContactos from '../../Components/Contactos/ListaContactos/ListaContactos.jsx'
+import ContactoFooter from '../../Components/Contactos/ContactoFooter/ContactoFooter.jsx'
 import ContactoHeader from '../../Components/Contactos/ContactoHeader/ContactoHeader.jsx';
 
 
-const ContactScreen = () => { /* Función que devuelve JSX */
-    const [search, setSearch] = useState('');/*  Uso el hook useState para crear un estado llamado search y una función setSearch para actualizar el estado. El estado search se inicializa con un valor vacío ('')*/
-    const handleSearchChange = (value) => {/* Función que maneja cambios en  estado search. La función toma de parámetro value, que es el nuevo valor que se asignará al estado search */
+const ContactScreen = () => {
+    // Funcion que cambia el estado
+    const [search, setSearch] = useState('');
+    // Funcion handleSearchChange que cambia el estado
+    const handleSearchChange = (value) => {
         setSearch(value)
-    }/* . La función llama a setSearch con el value pasado como parámetro lo que actualiza el estado search */
+    }
 
-
+    // Render
     return (
         <div className="contact-screens">
 
-            <ContactoHeader  search={search} onSearchChange={handleSearchChange} />{/* Paso las props correspondientes a los estados */}
-            <ListaContactos search={search} />{/* Paso las props correspondientes a los estados */}
-            <ContactoFooter />{/* Instancio el componente ContactoFooter */}
+            <ContactoHeader search={search} onSearchChange={handleSearchChange} />
+            <ListaContactos search={search} />
+            <ContactoFooter />
 
         </div>
     )
 }
 
-export default ContactScreen
+export default ContactScreen;
+
+/*  Resumen:
+ Este componente muestra la pantalla de contactos y permite realizar una búsqueda en la lista de contactos. 
+ También utiliza los componentes ContactoHeader, ListaContactos y ContactoFooter para mostrar la interfaz de usuario.
+ */

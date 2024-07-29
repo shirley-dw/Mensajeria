@@ -1,20 +1,20 @@
-/* Importo librerias */
-import React, { useState, useEffect} from "react";
+// Importo librerias
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from 'react-router-dom'
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaRegBell, FaRegBookmark } from "react-icons/fa6";
 import { AiOutlinePicture } from "react-icons/ai";
 import { PiLockLaminatedFill } from "react-icons/pi";
 import { MdOutlinePhone, MdOutlineVideocam, MdSearch, MdLock, MdOutlineTimelapse } from "react-icons/md";
-/* Fetching */
+// Importo Fetching
 import { ObtenerContactos } from '../../../Fetching/contactosFetching'
-/* Estilos */
+// Importo estilos
 import './ContactInfo.css'
 
 const ContactInfo = () => {
     const { contactoID } = useParams([]);
     const [contacto, setContacto] = useState([]);
-
+    // Fetching
     useEffect(() => {
         ObtenerContactos()
             .then(data => {
@@ -27,8 +27,10 @@ const ContactInfo = () => {
                 console.error('Error al obtener contactos:', error);
             });
     }, [contactoID]);
-
+    // Imagenes
     const imagenes = '/imagenes/' + contacto.thumbnail;
+
+    // Render
     return (
         <div className="infoContainer">
             <div className="infoHeader">

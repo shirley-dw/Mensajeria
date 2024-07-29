@@ -6,23 +6,23 @@ import { CiCamera } from 'react-icons/ci';
 import { IoMdSearch } from 'react-icons/io';
 import { SiWhatsapp } from "react-icons/si";
 import { BsArrowRightCircleFill } from "react-icons/bs";
-
 // Estilos
 import './ContactoHeader.css';
-/* Importo form de busqueda */
+// Importo componentes
 import FormBusquedaDeContactos from '../FormBusquedaDeContactos/ContactoForm.jsx';
 
 const ContactoHeader = ({ search, onSearchChange }) => {
   const [searchVisible, setSearchVisible] = useState(false);/* Inicio estado en false */
   const [modalIsOpen, setModalIsOpen] = useState(false);
-
+// Función que abre el modal
     const openModal = () => {
         setModalIsOpen(true);
     };
-
+// Función que cierra el modal
     const closeModal = () => {
         setModalIsOpen(false);
     };
+// Funcion que cambia el estado
   const handleSearchClick = () => {
     if (searchVisible) {
       setSearchVisible(false);
@@ -30,7 +30,7 @@ const ContactoHeader = ({ search, onSearchChange }) => {
       setSearchVisible(true);
     }
   };
-
+// Render
   return (
     <div className={`contact-header ${searchVisible ? 'search-visible' : ''}`}>{/*  Si el estado es true, se ejecuta la clase search-visible */}
       {searchVisible && (
@@ -74,12 +74,4 @@ const ContactoHeader = ({ search, onSearchChange }) => {
   )
 }
 
-
-export default ContactoHeader
-{/*   <p className='subtitle'>Administracion de anuncios</p>
-                  <p className='subtitle'>Nuevo grupo</p>
-                  <p className='subtitle'>Comunidades</p>
-                  <p className='subtitle'>Etiquetas</p>
-                  <p className='subtitle'>Dispositivos vinculados </p>
-                  <p className='subtitle'>Mensajes destacados</p>
-                  <p className='subtitle'>Ajustes</p> */}
+export default ContactoHeader;

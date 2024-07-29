@@ -1,19 +1,19 @@
 
-/* Importaciones de react */
+// Importaciones de react 
 import { useState, useEffect } from 'react';
 
-/* Función fetching */
+// Función fetching 
 import { ObtenerContactos } from '../Fetching/contactosFetching';
 
 
 const useContactos = (id) => {
-    /* estados */
+   //Se definen los estados 
     const [contacto, setContacto] = useState(null);
     const [loading, setLoading] = useState(true);
    
 
 
-    /* Consulta */
+ // Se define la consulta
     useEffect(() => {
         const fetchContactos = async () => {
             try {
@@ -29,9 +29,10 @@ const useContactos = (id) => {
         fetchContactos();
     }, [id]);
 
-    /* Se retorna los estados */
+  // RETORNA LA CONSULTA
     return { contacto, loading};
 };
 
 
 export default useContactos;
+

@@ -1,16 +1,14 @@
-/* Importaciones de react */
+// Importo librerias
 import { useState, useEffect } from 'react';
-
-/* Función fetching */
+// Importo Fetching
 import { ObtenerMensajes } from '../Fetching/mensajesFetching.js';
 
-
 const useMensajes = (id) => {
-    /* estados */
+
+    // Defino state inicial
     const [mensajes, setMensajes] = useState([]);
     const [loading, setLoading] = useState(true);
-
-    /* Consulta */
+    // Defino la consulta
     useEffect(() => {
         const fetchMensajes = async () => {
             try {
@@ -26,6 +24,7 @@ const useMensajes = (id) => {
         fetchMensajes();
     }, [id]);
 }
+// Retorno la consulta
 return { mensajes, loading };
 
 

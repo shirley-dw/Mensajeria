@@ -1,13 +1,12 @@
-/* Importo React / useParams / Mensajeria.json / CSS e Imagenes */
+//Importo libreria
 import React from 'react';
-import './Mensajes.css'
-/* import  { Imagenes } from '/Imagenes'  */
-
+//Importo estilos
+import './Mensajes.css';
 
 const Mensajes = ({ mensaje, contacto }) => {
   const { author, text, status, day, hour } = mensaje;
   const isAuthor = author === 'yo';
-
+//Render
   return (
     <>
       <div className="content"  style={{ justifyContent: isAuthor ? 'flex-end' : 'flex-start' }}>

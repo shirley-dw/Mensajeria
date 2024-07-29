@@ -1,4 +1,4 @@
-.info-screen{
+.info-screen {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,103 +7,112 @@
     width: 100%;
     background: rgb(30, 29, 55);
     background: linear-gradient(90deg, rgba(30, 29, 55, 1) 0%, rgba(31, 74, 37, 1) 52%, rgba(8, 67, 79, 1) 100%);
-    overflow: hidden;
+    overflow-y: scroll;
 }
-.info-header{
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: #111B21;
+
+}
+
+.info-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
-    background-color: #111B21;
-    margin-bottom: 30px;
- 
+    height: 40%;
 }
-.info{
+
+.info {
     margin-bottom: 50px;
     display: flex;
-    align-items: start;
-    justify-content: center;
     flex-direction: column;
-    
+    align-items: center;
+    justify-content: center;
+
 }
-.profile{
-    width:200px;
+
+.profile {
+    width: 200px;
     height: 200px;
     border-radius: 50%;
-    
+    border: 5px solid #06584f;
+
 }
-.profile-name{
+
+.profile-name {
     font-size: 30px;
     color: white;
-   
 }
-.status-text{
+
+.status-text {
     font-size: 20px;
     color: #e5ddd5;
 }
-.options{
+
+.options {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 100px;
-    row-gap: 10px;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
-
-.opciones .icon-container {
+.options .icon-container {
+    background-image: linear-gradient(to right, #58ecb195 0%, #80837fa3 51%, #58ecb195 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 2px #2b2a2ace;
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: #919191 solid 1px;
-    border-radius: 20px;
-    width: 150px;
-    
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    bottom: 30px;
 }
-
-.opciones .icon-container .icons {
-    margin: 5px;
-    font-size: 30px;
-    color: #08ff6f;
-    padding-bottom: 20px;
-    padding-top: 5px;
-}
-
-.opciones .icon-container p {
-    position: absolute;
-    margin-top: 50px;
-    font-size: 14px;
-    color: #919191;
-}
-.contacto{
-    display: flex;
-    align-items: center;
+.options .icon-container:hover {
+    background-position: right center;
+    color: #fff;
     text-decoration: none;
-    color: #e5ddd5;
-    position: absolute ;
-    margin-left: 30px;
 }
 
-.back-icon{
-    margin-right: 0px; 
-    font-size: 20px;
+.options .icon-container .opciones-icons {
+font-size: 30px;
+}
+
+.back-icon {
+    margin-top: 30px;
+    margin-right: 0px;
+    font-size: 30px;
     color: #e5ddd5;
     font-weight: 900;
     margin: 20px;
 }
 
-.decorado{
-    margin-top: 20px;
+.back-icon:hover {
+    color: #08ff6f;
+    cursor: pointer;
+}
+
+.deco {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 20px;
-
+    margin-bottom: 40px;
 }
 
-.decorado .avanced{
+.deco .avanced {
     display: flex;
     flex-direction: row;
     color: #fff;
@@ -112,27 +121,47 @@
     gap: 10px;
     border-bottom: #376148 solid 1px;
     margin-right: 10px;
-    padding: 5px 0;
+   
 }
 
-.decorado .avanced:hover{
+.deco .avanced:hover {
     background-color: #06584f;
 }
 
-.decorado .avanced .icons{
-    color: #919191;
+.deco .avanced .iconos {
+    color: #fff9f9;
     font-size: 20px;
 }
-.decorado .avanced p{
+.deco .avanced .iconos:hover {
+    color: #08ff6f;
+}
+.deco .avanced p {
     margin: 10px;
     display: flex;
     flex-direction: column;
     font-weight: 600;
 }
 
-.decorado .avanced span{
+.deco .avanced span {
     color: #919191;
     font-size: 12px;
     font-weight: 300;
     width: 300px;
+}
+
+.info-screen::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+.infoscreen::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.info-screen::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.info-screen::-webkit-scrollbar-thumb:hover {
+    background: #111B21;
 }
