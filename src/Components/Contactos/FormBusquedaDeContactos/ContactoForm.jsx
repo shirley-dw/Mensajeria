@@ -27,6 +27,7 @@ function FormBusquedaDeContactos({ search, onSearchChange, onBackButtonClick }) 
         placeholder="Buscar..."
         onChange={handleChange}
         value={search}
+        className='input-search'
       />
       <button><MdArrowForwardIos className='back' onClick={onBackButtonClick} /></button>
     </form>

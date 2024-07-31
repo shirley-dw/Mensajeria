@@ -45,7 +45,6 @@ const ContactoHeader = ({ search, onSearchChange }) => {
       <div className='icons'>
         <CiCamera />
         <IoMdSearch onClick={handleSearchClick} />
-        
         <BsThreeDotsVertical className='icons' onClick={openModal} />
             </div>
         <Modal
