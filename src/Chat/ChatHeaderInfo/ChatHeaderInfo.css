@@ -85,6 +85,13 @@
 
 /* Responsive MediaQuery*/
 
+
+/* Desktop */
+@media (max-width: 2000px) {
+    .chat-header-info {
+        height: 100px;
+    }
+}
 /* Large Desktop / TV / Laptop */
 @media (max-width: 1200px) {
     .chat-header-info {
@@ -101,7 +108,7 @@
 /* Mobile horizontal*/
 @media (max-width: 768px) {
     .chat-header-info {
-        height: 100px;
+        height: 80px;
     }
 }
 

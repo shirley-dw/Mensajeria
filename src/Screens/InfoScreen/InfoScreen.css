@@ -10,7 +10,7 @@
     overflow-y: scroll;
 }
 
-.info-container {
+.info-screen .info-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@
 
 }
 
-.info-header {
+.info-container .info-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,7 +165,43 @@ font-size: 30px;
 .info-screen::-webkit-scrollbar-thumb:hover {
     background: #111B21;
 }
-
+/* Media Queries */
+/* Desktop */
+@media (max-width:2000px) {
+    .info-screen{
+        width: 100%;
+    }
+    .info-screen .info-container {
+        width: 70%;
+    }
+    
+}
+/* Desktop / TV / Laptop */
+@media  (max-width: 1200px) {
+    .info-screen{
+        width: 100%;
+    }
+    .info-container {
+        width: 90%;
+    }
+}
+/* Tablet */
+@media  (max-width: 992px) {
+    .info-screen{
+        width: 100%;
+    }
+    .info-container {
+        width: 90%;
+    }
+}
+@media  (max-width: 768px) {
+    .info-screen{
+        width: 100%;
+    }
+    .info-container {
+        width: 90%;
+    }
+}
 @media  (max-width: 320px) {
     .info-screen{
         width: 100%;

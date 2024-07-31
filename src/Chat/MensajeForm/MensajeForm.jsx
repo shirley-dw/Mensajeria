@@ -14,13 +14,13 @@ const MensajeForm = ({ submitMensaje }) => {
         submitMensaje(e.target.nuevomensaje.value);
         e.target.reset()
     }
-//Render
+    //Render
     return (
         <form onSubmit={handleSubmit} className="form">
-            <a href="" className='icons-emoji'><BsEmojiSmile /></a>
-            <input className='input-mensaje' type='text' name='nuevomensaje' placeholder='Escribe un mensaje' />
-            <a href="" className='icons-input'><IoCameraOutline /></a>
-            <a href="" className='icons-input'><MdAttachFile /></a>
+            <BsEmojiSmile className='icons-emoji' />
+            <input className='input-mensaje' type='text'  name='nuevomensaje' placeholder='Escribe un mensaje'  />
+            <IoCameraOutline className='icons-input' />
+            <MdAttachFile className='icons-input' />
             <button type="submit" className='btn-send'><MdSend /></button>
         </form>
 

@@ -1,32 +1,44 @@
 /* Style formulario de mensajes */
 
+:root {
+    --ColorPlaceHolder: #5b5858;
+    --ColorText: #fff;
+    --ColorFooter: #111B21;
+}
 form {
     display: flex;
     width: 100%;
     height: 10%;
     position: fixed;
-    background-color: #035C55;
+    background-color: var(--ColorFooter);
     align-items: center;
-    justify-content: space-around;
-
 }
 
-.input-mensaje {
-    border-radius: 50px;
+
+.form .input-mensaje {
+    color: var(--ColorText);
+    font-size: 18px;
+    background-color: var(--ColorFooter);
     padding: 15px;
-    border: 2px rgba(0, 0, 0, 0.596);
-    box-shadow: 0 0 3px 1px #00000067;
+    outline: none;
+    border: none;
     width: 80%;
-    height: 35px;
-    margin-left: 5px;
-
+    height: 40px;
+    position: relative;
+    left: 5%;
+    overflow: hidden; 
+    white-space: nowrap;
 }
 
-.btn-send {
+.form .input-mensaje::placeholder {
+    color: var(--ColorPlaceHolder);
+}
+
+.form .btn-send {
     display: flex;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     align-items: center;
     border-radius: 50px;
     padding: 5px;
@@ -37,32 +49,38 @@ form {
     left: 95%;
 }
 
-.btn-send:hover {
+.form .btn-send:hover {
     cursor: pointer;
 }
 
-.icons-input {
-    justify-content: space-around;
+.form .icons-input {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 8%;
+    margin-right: 10px;
+
 }
 
-.icons-input svg {
+.form .icons-input svg {
+    cursor: pointer;
+}
+
+
+
+.form .icons-emoji {
     display: flex;
     align-items: center;
     cursor: pointer;
     width: 30px;
     height: 30px;
     color: white;
-
-
-}
-
-.icons-emoji svg {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    color: white;
+    position: relative;
+    left: 50px;
 }
 
 
@@ -109,28 +127,29 @@ form {
         bottom: 0;
     }
 
-    .input-mensaje {
-        width: 65%;
-        height: 30px;
+    .form .input-mensaje {
+        width: 75%;
+        height: 20px;
     }
 
-    .btn-send {
+    .form .btn-send {
         width: 30px;
         height: 30px;
     }
 
-    .icons-emoji svg {
+    .form .icons-emoji svg {
         width: 20px;
         height: 20px;
+
     }
 
-    .icons-input svg {
+    .form .icons-input svg {
         width: 20px;
         height: 20px;
         left: 20px;
     }
 
-    .icons-input {
+    .form .icons-input {
         margin-left: 10px;
     }
 
@@ -145,31 +164,29 @@ form {
         bottom: 0;
     }
 
-    .input-mensaje {
-        width: 65%;
-        height: 30px;
+    .form .input-mensaje {
+        width: 75%;
+        height: 35px;
     }
 
-    .btn-send {
+    .form .btn-send {
         width: 30px;
         height: 30px;
-        left: 90%;
+        left: 95%;
     }
 
-    .icons-emoji svg {
+    .form .icons-emoji {
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+    }
+
+    .form .icons-input {
         width: 20px;
         height: 20px;
-        margin-left: 10px;
+        left: 6%;
     }
 
-    .icons-input svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .icons-input {
-        margin-left: 10px;
-    }
 }
 
 /* Mobile horizontal*/
@@ -181,24 +198,32 @@ form {
         bottom: 0;
     }
 
-    .input-mensaje {
-        width: 65%;
-        height: 30px;
+    .form .input-mensaje {
+        width: 75%;
+        height: 35px;
+        left: 5px;
+        font-size: 12px;
     }
 
-    .btn-send {
+    .form .btn-send {
         width: 30px;
         height: 30px;
-        left: 90%;
+        left: 92%;
     }
 
-    .icons-emoji svg {
+    .form .icons-emoji {
         width: 20px;
         height: 20px;
-        margin-left: 10px;
+        left: 20px;
     }
+    .form .icons-input {
+        width: 20px;
+        height: 20px;
+        left: 10px;
+    }
+   
 }
-
+/* Phone */
 @media (max-width: 320px) {
     form {
         width: 100vh;
@@ -207,29 +232,28 @@ form {
         bottom: 0;
     }
 
-    .input-mensaje {
+    .form .input-mensaje {
         width: 65%;
-        height: 30px;
+        height: 25px;
+        left: 5px;
     }
 
-    .btn-send {
-        width: 30px;
-        height: 30px;
+    .form .btn-send {
+        width: 20px;
+        height: 20px;
         left: 90%;
     }
 
-    .icons-emoji svg {
-        width: 20px;
-        height: 20px;
-        margin-left: 10px;
+    .form .icons-emoji {
+        width: 15px;
+        height: 15px;
+    
     }
 
-    .icons-input svg {
-        width: 20px;
-        height: 20px;
+    .form .icons-input {
+        width: 15px;
+        height:15px;
     }
 
-    .icons-input {
-        margin-left: 10px;
-    }
+
 }
