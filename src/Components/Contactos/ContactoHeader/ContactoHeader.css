@@ -9,7 +9,7 @@
   height: 70px;
   transition: all 0.3s ease;
   position: fixed;
-  z-index: 2;
+
 }
 
 .contact-header .icons {
@@ -43,7 +43,7 @@
   width: 92%;
   margin-top: 0.5rem;
   margin-right: 0;
-  z-index: 2;
+
 }
 
 .modal {
@@ -180,7 +180,7 @@
   }
 
   .contact-header .logo-icons {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .contact-header .logo {
