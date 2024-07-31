@@ -23,4 +23,4 @@ const Mensajes = ({ mensaje, contacto }) => {
 };
 
 
-export default Mensajes
+export default Mensajes;

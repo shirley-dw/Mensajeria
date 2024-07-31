@@ -82,6 +82,30 @@
     align-items: center;
     justify-content: center;
 }
+
+/* Responsive MediaQuery*/
+
+/* Large Desktop / TV / Laptop */
+@media (max-width: 1200px) {
+    .chat-header-info {
+        height: 100px;
+    }
+}
+/* Tablet */
+@media (max-width: 992px) {
+    .chat-header-info {
+        height: 120px;
+    }
+}
+
+/* Mobile horizontal*/
+@media (max-width: 768px) {
+    .chat-header-info {
+        height: 100px;
+    }
+}
+
+/* Phone */
 @media (max-width: 320px) {
     .chat-header-info {
         height: 70px;

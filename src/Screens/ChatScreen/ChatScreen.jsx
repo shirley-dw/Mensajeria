@@ -26,7 +26,7 @@ const ChatScreen = ({ contactoID }) => {
             <ChatHeaderInfo />
             <div>
                 <div className='chat'> 
-                    <div className='ChatScreen'>
+                    <div className='chat-screen'>
                         <ListaMensajes contactoID={contactoID} mensaje={mensajes[mensajes.length - 1]}  />
                     </div>
                     <MensajeForm submitMensaje={addMensaje} /> 

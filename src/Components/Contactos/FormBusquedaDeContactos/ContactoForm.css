@@ -28,4 +28,18 @@
     transition: all 0.3s ease;
     
   }
+/* Media Queries */
+
+/* Desktop */
+@media ( max-width: 1200px) {
+  .form-search {
+    position: absolute;
+    top: 30px; 
+    left: 0;
+    z-index: 999; 
+    justify-content: space-around;
+    background-color: #035C55;
+  }
+}
+
 

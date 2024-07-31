@@ -1,10 +1,18 @@
+
+/* Variables de Navegador Chat */
+:root{
+    --ColorText: #888;
+
+}
+
 .container-msj {
   display: flex;
   flex-direction: column;
-  overflow: scroll-y;
-  height: calc(100vh - 100px);
-  margin-top: 100px;
+  overflow-y: scroll;
+  height: 100vh;
   padding-top: 0; 
+  margin-top: 20px;
+ 
 }
 
 ::-webkit-scrollbar {
@@ -17,7 +25,41 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background-color: var(--ColorText);
   border-radius: 10px;
   border: 2px solid transparent;
+}
+
+/*  Responsive MediaQuery */
+
+/* Desktop / TV / Laptop */
+@media (max-widht: 1200px) {
+  .container-msj {
+   height: 100vh;
+    margin-top: 100px;
+  }
+}
+/* Tablet */
+@media (max-widht: 992px) {
+  .container-msj {
+    height: 100vh;
+    margin-top: 150px;
+  }
+}
+
+/* Mobile horizontal*/
+@media (max-widht: 768px) {
+  .container-msj {
+    height: 100vh;
+    top: 100px;
+  }
+}
+
+/* Phone */
+
+@media (max-widht: 320px) {
+  .container-msj {
+    height: 100vh;
+   margin-bottom: 50%;
+  }
 }

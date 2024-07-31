@@ -48,15 +48,43 @@
     margin-left: 10px;
 }
 
-@media (max-width: 320px) {
-    .contact-item  {
-        height: 70px;
 
-      
+/* Media Queries */
+
+/* Desktop / TV / Laptop */
+@media (max-width: 1200px) {
+    .contact-item {
+        height: 80px;
+    }
+    .contact-item .dato {
+        flex: 1;
+        overflow: hidden;
+    }
+    .contact-item .name {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: white;
+        margin-left: 15px;
+    }
+    .contact-item .time {
+        margin-right: 8px;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.356);
+    }
+}
+/* Tablet */
+@media (max-width: 992px) {
+    .contact-item {
+        height: 80px;
+    }
+}
+/* Phone */
+@media (max-width: 320px) {
+    .contact-item {
+        height: 70px;
     }
     .contact-item .ultimo-mensaje {
         font-size: 13px;
-        
     }
     .contact-item .name {
         font-size: 15px;
@@ -68,5 +96,4 @@
     .img {
         width: 40px;
     }
-    
 }
