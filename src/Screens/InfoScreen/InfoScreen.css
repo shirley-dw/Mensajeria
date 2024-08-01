@@ -128,9 +128,7 @@ font-size: 30px;
     color: #fff9f9;
     font-size: 20px;
 }
-.deco .avanced .iconos:hover {
-    color: #08ff6f;
-}
+
 .deco .avanced p {
     margin: 10px;
     display: flex;
@@ -292,7 +290,7 @@ font-size: 30px;
         width: 100%;
     }
     .info-container {
-        width: 90%;
+        width: 100%;
     }
     .profile {
         width: 90px;
