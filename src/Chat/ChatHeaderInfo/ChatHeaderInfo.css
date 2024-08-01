@@ -103,8 +103,13 @@
         height: 100px;
     }
     .contact .profile-name {
-        font-size: 12px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .contact .status-text {
+        font-family: 15px;
+        margin-bottom: 10px;
     }
 }
 
