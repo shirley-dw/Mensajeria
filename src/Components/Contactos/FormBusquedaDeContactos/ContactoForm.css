@@ -49,6 +49,31 @@
     transition: all 0.3s ease;
   }
 }
+@media screen and (min-width: 323px) and (max-width: 500px) {
+  form-search {
+    position: absolute; 
+    left: 0;
+    z-index: 999; 
+    justify-content: space-around;
+    background-color: #035C55;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    transition: all 0.3s ease;
+  }
+.form-search .input-search {
+    width: 70%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    margin : 0.5rem;
+  }
+}
+
 /* Mobile */
 @media ( max-width: 320px) {
   .form-search {
