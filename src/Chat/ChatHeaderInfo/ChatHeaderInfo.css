@@ -169,7 +169,34 @@
         gap: 5px;
     }
 }
+@media screen and (min-width: 323px) and (max-width: 500px) {
+    .chat-header-info {
+        height: 70px;
+    }
 
+    .contact .profile-name {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .contact .status-text {
+        font-size: 25px;
+
+    }
+
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+        margin-left: -10px;
+        border: 2px solid #7ecf52;
+    }
+
+    .icons svg {
+        font-size: 25px;
+        gap: 5px;
+    }
+}
 /* Phone */
 @media (max-width: 320px) {
     .chat-header-info {
