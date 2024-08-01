@@ -119,12 +119,12 @@
         font-size: 8px;
     }
    .contact .profile-name {
-    font-size: 15px;
+    font-size: 10px;
     margin-left: 10px;
     margin-top: 10px;
    }
    .contact .status-text {
-    font-size: 10px;
+    font-size: 8px;
     margin-left: 10px;
    }
    .profile-pic{
@@ -134,7 +134,8 @@
     border: 2px solid #7ecf52;
    }
    .icons svg {
-    font-size: 15px;
+    font-size: 20px;
+    gap: 5px;
    }
 
 }

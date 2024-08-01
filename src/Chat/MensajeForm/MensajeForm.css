@@ -239,9 +239,9 @@ form {
     }
 
     .form .btn-send {
-        width: 20px;
-        height: 20px;
-        left: 90%;
+        width: 25px;
+        height: 25px;
+        left: 85%;
     }
 
     .form .icons-emoji {
@@ -251,8 +251,7 @@ form {
     }
 
     .form .icons-input {
-        width: 15px;
-        height:15px;
+        display: none;
     }
 
 

@@ -146,16 +146,17 @@
     display: flex;
     gap: 5px;
   }
-  .contact-header .icons svg {
+   .icons svg {
+    font-size: 30px;
     cursor: pointer;
     font-size: 15px;
-    width: 15px;
+    width: 30px;
   }
   .contact-header .logo-icons {
-    font-size: 20px;
+    font-size: 30px;
   }
   .contact-header .logo {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
