@@ -223,6 +223,38 @@ form {
     }
    
 }
+
+@media screen and (min-width: 323px) and (max-width: 500px) {
+    form {
+        width: 100vh;
+        height: 10%;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .form .input-mensaje {
+        width: 65%;
+        height: 25px;
+        left: 5px;
+    }
+
+    .form .btn-send {
+        width: 30px;
+        height: 30px;
+        left: 85%;
+    }
+
+    .form .icons-emoji {
+        width: 15px;
+        height: 15px;
+    
+    }
+
+    .form .icons-input {
+        display: none;
+    }
+    
+}
 /* Phone */
 @media (max-width: 320px) {
     form {
