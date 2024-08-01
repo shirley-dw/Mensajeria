@@ -297,7 +297,7 @@ font-size: 30px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
     .info {
         width: 100%;
