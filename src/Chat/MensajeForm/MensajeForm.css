@@ -223,8 +223,8 @@ form {
     }
    
 }
-
-@media screen and (min-width: 323px) and (max-width: 500px) {
+/* Phone */
+@media screen and (min-width: 320px) and (max-width: 500px) {
     form {
         width: 100vh;
         height: 10%;
@@ -254,37 +254,8 @@ form {
         display: none;
     }
     
-}
-/* Phone */
-@media (max-width: 320px) {
-    form {
-        width: 100vh;
-        height: 10%;
-        position: fixed;
-        bottom: 0;
+    .form .input-mensaje::placeholder {
+        color: var(--ColorPlaceHolder);
+        font-size: 12px;
     }
-
-    .form .input-mensaje {
-        width: 65%;
-        height: 25px;
-        left: 5px;
-    }
-
-    .form .btn-send {
-        width: 25px;
-        height: 25px;
-        left: 85%;
-    }
-
-    .form .icons-emoji {
-        width: 15px;
-        height: 15px;
-    
-    }
-
-    .form .icons-input {
-        display: none;
-    }
-
-
 }
