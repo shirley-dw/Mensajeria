@@ -81,7 +81,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    left: 15px;
+    left: -15px;
 }
 
 
