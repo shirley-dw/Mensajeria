@@ -134,41 +134,6 @@
     }
 }
 
-
-@media screen and (min-width: 323px) and (max-width: 480px) {
-    .chat-header-info {
-        height: 70px;
-        font-size: 8px;
-    }
-
-    .contact .profile-name {
-        font-size: 15px;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-
-    .contact .status-text {
-        font-size: 10px;
-
-    }
-
-    .profile-pic {
-        width: 35px;
-        height: 35px;
-        margin-left: -10px;
-        border: 2px solid #7ecf52;
-    }
-
-    .icons {
-        font-size: 15px;
-        gap: 1px;
-    }
-
-    .icons svg {
-        font-size: 20px;
-        gap: 5px;
-    }
-}
 @media screen and (min-width: 323px) and (max-width: 500px) {
     .chat-header-info {
         height: 70px;
