@@ -182,7 +182,7 @@
   }
 
   .contact-header .logo-icons {
-    font-size: 20px;
+    display: none;
   }
 
   .contact-header .logo {

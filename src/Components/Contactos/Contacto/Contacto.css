@@ -15,6 +15,7 @@
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.14);
     border-left: 0;
     border-right: 0;
+    gap: 5px;
 }
 
 .contact-item .dato {
@@ -76,19 +77,22 @@
 @media (max-width: 992px) {
     .contact-item {
         height: 80px;
+        gap: 5px;
     }
 }
 /* Phone */
 @media (max-width: 320px) {
     .contact-item {
         height: 70px;
+        
     }
     .contact-item .ultimo-mensaje {
         font-size: 13px;
+       gap: 2px;
     }
     .contact-item .name {
         font-size: 15px;
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .contact-item .time {
         font-size: 10px;
