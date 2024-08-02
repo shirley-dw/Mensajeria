@@ -7,16 +7,16 @@
     width: 100%;
     background: rgb(30, 29, 55);
     background: linear-gradient(90deg, rgba(30, 29, 55, 1) 0%, rgba(31, 74, 37, 1) 52%, rgba(8, 67, 79, 1) 100%);
-    overflow-y: scroll;
+
 }
 
 .info-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 50%;
     height: 100%;
-    background-color: #111B21;
 }
 
  .info-header {
@@ -26,7 +26,10 @@
     justify-content: space-between;
     width: 100%;
     height: 60px;
-    
+    position: fixed;
+    top: 10px; 
+    z-index: 1;
+    transition: all 0.3s ease;
 }
 
 .info {
@@ -92,7 +95,7 @@ font-size: 30px;
     font-size: 30px;
     color: #e5ddd5;
     font-weight: 900;
-    margin: 20px;
+
 }
 
 .back-icon:hover {
@@ -104,7 +107,7 @@ font-size: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+    width: 40vw;
     
 }
 
@@ -174,7 +177,7 @@ font-size: 30px;
         justify-content: center;
     }
     .info-screen .info-container .info {
-        width: 40%;
+        width: 70%;
     }
     .deco .avanced .iconos {
         font-size: 20px;
